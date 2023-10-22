@@ -1,0 +1,124 @@
+@media screen and (max-width: 767px) {
+  .menu-list {
+    display: none;
+  }
+  .menu-order-btn {
+    display: none;
+  }
+  .menu-burger-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+    background-color: transparent;
+  }
+  .menu-burger-btn-icon {
+    fill: var(--logo-color);
+  }
+}
+
+.page-header {
+  width: 100%;
+  margin: 0 auto;
+}
+.page-header-container {
+  scroll-behavior: smooth;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-header-navigation {
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.menu-logo {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.28;
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.menu-logo-icon {
+  margin-right: 8px;
+  fill: var(--logo-color);
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  #how-it-work {
+    height: 100%;
+  }
+  #vegetables {
+    height: 100%;
+  }
+  #contacts {
+    height: 100%;
+  }
+
+  .menu-burger-btn {
+    display: none;
+  }
+  .menu-list {
+    display: flex;
+    align-items: center;
+    gap: 0 14px;
+  }
+  .menu-item {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.56px;
+    color: var(--black);
+  }
+  .menu-link {
+    transition: color 250ms linear;
+  }
+  .menu-link:focus {
+    color: var(--logo-color);
+  }
+  .menu-logo {
+    margin-left: 86px;
+  }
+  .menu-order-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 16px 0;
+  }
+
+  .menu-order-btn-icon {
+    fill: none;
+    stroke: var(--black);
+    transition: stroke 250ms linear;
+  }
+  .menu-order-btn:focus .menu-order-btn-icon {
+    stroke: var(--logo-color);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .page-header-navigation {
+    min-width: 668px;
+    justify-content: space-between;
+  }
+  .menu-link:hover {
+    color: var(--logo-color);
+  }
+  .menu-logo {
+    margin-left: 0px;
+  }
+  .menu-order-btn-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .menu-order-btn:hover .menu-order-btn-icon {
+    stroke: var(--logo-color);
+  }
+}
