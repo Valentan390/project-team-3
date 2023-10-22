@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/project-team-3/assets/favicon-9b634656.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code of Wizards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400;1,9..40,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+
+    
+    <script type="module" crossorigin src="/project-team-3/assets/index-ba3fd516.js"></script>
+    <link rel="stylesheet" href="/project-team-3/assets/index-37dae2fe.css">
+  </head>
+  <body>
+    <header class="page-header">
+  <div class="page-header-container container">
+    <nav class="page-header-navigation">
+      <ul class="menu-list list">
+        <li class="menu-item">
+          <a class="menu-link" href="#how-it-work">How It Works</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#vegetables">Vegetables</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+
+      <a href="./index.html" class="menu-logo">
+        <svg
+          class="menu-logo-icon"
+          width="16"
+          height="16"
+          aria-label="logo-icon"
+        >
+          <use href="/project-team-3/assets/icons-e4210cf5.svg#icon-logo"></use></svg
+        >Veggieboost</a
+      >
+    </nav>
+    <button
+      type="button"
+      class="menu-order-btn button"
+      data-modal-open
+      aria-label="make an order"
+    >
+      <svg
+        class="menu-order-btn-icon"
+        width="20"
+        height="14"
+        aria-label="order-button-icon"
+      >
+        <use href="/project-team-3/assets/icons-e4210cf5.svg#icon-shopping-cart"></use>
+      </svg>
+    </button>
+
+    <button
+      class="menu-burger-btn button js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      aria-label="open mobile menu"
+    >
+      <svg
+        class="menu-burger-btn-icon"
+        width="24"
+        height="24"
+        aria-label="menu-burger-btn-icon"
+      >
+        <use href="/project-team-3/assets/icons-e4210cf5.svg#icon-gg-menu"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+    <section class="hero">
+  <div class="container hero-container">
+    <ul class="reviews-list list">
+      <li class="reviews-item">
+        <picture>
+          <source
+            srcset="data:image/webp;base64,UklGRoYEAABXRUJQVlA4WAoAAAAQAAAATwAATwAAQUxQSH0BAAABkFZtb91IHwRBEJRAMAQzmDCoGTQMXAaBYAiG8EEQBM3s9uLY2svPiJgAXC1pr410d7featkEC0u60weyJlljO83H1zSd3MwvZtaZ5GY+IW/zZPqkzHNo84lPneDLfGrLV8ndp79fo90X7HqB0pekDlP6otRBSl+WOkTpC1NHdF+6y2d3X/z+Ufbl9w/U1jN97/QA21vZQ8zvMAbKq5sHWV4oozB5lj3M8oxx2JPkgW6/1UhOAOKRmgApFE9AjeUAGAshHqxs0aQSzf6IprZoWo+GFo7/92U0Fk5v0bRHNHWPpqRoNolGwFgIHLFUIMWSALFQBMAZSQWALZL0GywO4mmJIz8Ti4L6DCWKgpfCGIg3cwz5HbQITryttp7pe9jXy/j0WO3Ax9LX6hioXIk6Asp1qBirXIWK0co1qBivfYWuuPSY7xBcnG0u23G9njM1xZSZszBj2sIZrAgm1syrrAhmT48L7NywpKQHR/BIgoVlK7V1+41sdU+CqwEAVlA4IOICAADwDwCdASpQAFAAPpE+mUmloz+op7Vd4/ASCUAYIsAcwXcTbwc+PY9GAAfQB35G9zwH0rLPG8NO0gFdmFcqK73uU+M4oRpXfVnBOT2zgQJ+urcv5vJFCaptDa9EUhBfuwXnCL665P0R2f/7Kai6nIi7IwvEYOYwLGfl4Aw6Cj8+N72oTeJfgQO4AP4gvfnkP7NxvY5r/HJSQ9nVryZlKhi0ZcYtNEFASiJqt5C1k2NDIl/LA0dXsG8VPMCNMCY0ckkzScb2ErCd6GWM45GctGyZjxvP3o7Xi5SuQD1HfOvVN+ZSaia/sorf6V3zdO/w3iDz4Go3SHAW90PMniriGusJIEqbQ9U9MHwtii9ccCBrNC3aYwrSU3zHjLotSZknhIfgvIbYZsBQ1R4jFc3G+AemamKQ8QW3KklXyMlkICIm5EuziLhV5bxwaHfV1ZJbHr9yw69dXZH88fkid72V5IwciW5H7pVHaNSIZjT9mY0trvyv/5KbVY2Nyqrmk1qf3aFvky60qcI6qWsILfehaVya2ksIORFDAzrbgzO8mRr6F3tAN9QFcgahBtdBIy48KJHQu1CeFpteTKCb9RazufxC83s+CEC0qAe591wJtk03bFbj09IJ2J7X6/KKX55sjx4BSmvJEgJdRr3ch+L+kTfqrRD+WOWYd1OFcp6OKcz/s/MX74rnC+BzpYqgoG+2equorh5wY3L+9WZu4aXD3RaX3va7UzFVmuZ767RWJyAYdA69TXjoMXaYJx7ofXyVImLTK3V8hfpCjc9OBmtn+8V2KlLKAkcAlbcs5f8sBdELYgpOUptrQM6zQP85eEmK9SXwQM2f3k4o1WdulByk0qXnVZA2+zPrltEiyDMCCTi3NPxtA2ssoBicwltFkMiP6kae1J+mr14ki6u7qSfa35ykdRTPPjJGfIvhkJqKDCwguZdItIqxrS4iPlo5bP6nj/n2XncFKH50s4uU+11gpIsAAAA= 2x, data:image/webp;base64,UklGRkACAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSMEAAAABgBDbdtzmQfgQBEVQzCBiEDGQGCgMFAaGIAgfwofw003LmwKIiAnAYkxdzd1GzxH75Wk+rS3skeIbW9jwMN+q11Lx7WVObj84ZGb40Xui+OHyx+XH0y9Bz5n8aE5YAASnFKBxZEA5DNFJY2ZJneU9WNRYzP9dYzFlGZ3lnVhyZIkwDgUyRwOEIwCoDA0AxM5p+IF07sLv9VTF3/eZgUkZJ26ZAeq+itVL91jCenjtqIKt4aVzlgX7Y+7D3E17ilgEAFZQOCBYAQAAUAcAnQEqKAAoAD6RQplKpaOiIaOM+LASCUG2AKaiiX8SH+LWqrx7PZcFZjlsIvjsxSSCfZ8KU8g+nJ6bMFIXXTXjAAD+3o23hEuD9IB2OO8X1HxdNlJWA1FgLS3vBu1EglxMspt2DJA/x/3HLsQl5dOcIbZ5Qv1vGG1N7XMop7HrZ0iW9mPhIznpjuv9e96ojHj6A5F5Mntb3QPI6lbircjGK5alr4yFYX1s+ypc7mz9zm0NeR9W55FyznMT6mYY34rho9eSsjvqjTpX3aFY2vCB4A1YFCGSNbw3qAshnbjbDKdIIAJAamRALPGIJN0AEPVltGxR9hdxTTQ+ltCP7zPc8TSRf2R2fbaBFy/UwAG9LJn79dl9DHbXHdGRHjqwafb47kSoW1afGb021ofCLgp8A8z96O586U2vdLe4gVCTW1WgBWzT//n/9+/pctvF8BfF0dgAAAA= 1x"
+            type="image/webp"
+          />
+          <source
+            srcset="/project-team-3/assets/hero-client-03@2x-a6f1533f.png 2x"
+            type="image/png"
+          />
+          <img
+            class="reviews-img"
+            src="data:image/png;base64,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"
+            alt="client review"
+          />
+        </picture>
+      </li>
+      <li class="reviews-item">
+        <picture>
+          <source
+            srcset="data:image/webp;base64,UklGRswEAABXRUJQVlA4WAoAAAAQAAAATwAATwAAQUxQSH0BAAABkFZtb91IHwRBEJRAMAQzmDCoGTQMXAaBYAiG8EEQBM3s9uLY2svPiJgAXC1pr410d7featkEC0u60weyJlljO83H1zSd3MwvZtaZ5GY+IW/zZPqkzHNo84lPneDLfGrLV8ndp79fo90X7HqB0pekDlP6otRBSl+WOkTpC1NHdF+6y2d3X/z+Ufbl9w/U1jN97/QA21vZQ8zvMAbKq5sHWV4oozB5lj3M8oxx2JPkgW6/1UhOAOKRmgApFE9AjeUAGAshHqxs0aQSzf6IprZoWo+GFo7/92U0Fk5v0bRHNHWPpqRoNolGwFgIHLFUIMWSALFQBMAZSQWALZL0GywO4mmJIz8Ti4L6DCWKgpfCGIg3cwz5HbQITryttp7pe9jXy/j0WO3Ax9LX6hioXIk6Asp1qBirXIWK0co1qBivfYWuuPSY7xBcnG0u23G9njM1xZSZszBj2sIZrAgm1syrrAhmT48L7NywpKQHR/BIgoVlK7V1+41sdU+CqwEAVlA4ICgDAAAwEQCdASpQAFAAPpE8mEglo6KhLNM92LASCUAXm8ArasMT4e3958BjO9r3e/4QR0g30tM/779cz/9AXmfZ2MHfILN31jkNTPetipOlp+E83C/bCMr8FPa3LY+IWevqGiKtDdHZrg6VbG1micfZOgii5K/XC/VggTfEZ/UebGyAAop3yE69WW8kVLe2og+VEZ9gAAD+/syy3+PmV5VBkQNv02R28diqaH9uNe/XSJWSKXECVQ4Io98XGbHN9XopDuNZAVwlDNPZbrhdS3gcOEgssIFgqRxYVpaYNIUs4Ud6gYcDxEhukDNXSmDIsPYke/yX//+CB//Bm//+CDToTb8qh09D2ReK0MQUP6SV0pm6+H6zAvoFMR6CsqLjZyqMcAH+xNZiMDgBt2vmsfDeXGNGBzc/p+Qu4CL0kh+x451K/n6nMEavYDl3qfNQ85yP2Hq19ap97HdIp+b3RKQnvqab8xkgE5Ife7GJ0l7TUXQnTVtWMoev6USLkcIzi6/veEKt/VmTcfwboTFzsF77hPWOnVnd+qpUh6KT0OdZq9zKKUE1J9oht6dC748lMqKCEJpwQ7U7IaCfO30CDAEXrBfrgm/kDOO9l2muBakrL4WgB4e3djpB4eymYL70Gog6nOd503iqYg9f2kQwdQOzTj4qrBqkv7qE5ptdpZ/P7Wi59SoDCqtxsaraZi6BMrxmXV2oMbZcIX4jYQ3LIkvre+RG2+SnCzxEvQkERIPadp5ZGCzpq8PFWf6H2TXBonwzdNmsg5w/BhWa1s2E0idi5b3JQBxWamaVzGnTDjxnhTw/Y4sXtl318+pH15JRwBtJ8mZTynm0H2ro+TKNnQTlsQsfpW8Om5+nXTYIgUsoMdEm0ZWYFMZovCm4yX4zEc/fOE56lKUae2v9bPvuOMXRh9T4SF0bzCVFzdOFEScZesl7QofRMwW4qAdBW7lCTTtx4rpBPQPyv6DMnQBLwyl2mKXJVQ7e8sesattmmy8HNjTkigLpvjvATiXyaPlcTmtHF/Cy7YOFd06IEzmkVz+UB4WGcrP/DZ//41b/8ZR//4ubH0k+5HbNPwAA 2x, data:image/webp;base64,UklGRkQCAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSMEAAAABgBDbdtzmQfgQBEVQzCBiEDGQGCgMFAaGIAgfwofw003LmwKIiAnAYkxdzd1GzxH75Wk+rS3skeIbW9jwMN+q11Lx7WVObj84ZGb40Xui+OHyx+XH0y9Bz5n8aE5YAASnFKBxZEA5DNFJY2ZJneU9WNRYzP9dYzFlGZ3lnVhyZIkwDgUyRwOEIwCoDA0AxM5p+IF07sLv9VTF3/eZgUkZJ26ZAeq+itVL91jCenjtqIKt4aVzlgX7Y+7D3E17ilgEAFZQOCBcAQAAEAgAnQEqKAAoAD6RPJlHpaOioSqsALASCUAXDH7hKCEqhq2oFh8buoG9AO1lWodKtMoZHYHGZ9XeDnkpPIlNsTGj52WFvw9NgAD52IfKn7HRW4yRQt5sF/FTmqMiLJDRfZqK/C/caKQVsLwGR55RDMumB1dxnrfVDs+IvnVy31J8KUTmS1yeMZJg0wpW2y6qOD2vVLBWeFg7oht/Bj5hxBaS+BZoZoL1h23Y1uj1dMTlWN2FqulGsVDjEtKGR/+He0m9+S79YNfl93iFsjj7BMsDU2eXI1Zfv02opBU4coiWEANSjdX0XQh+VS+68fWLamprm0VtpP6hqqHmQzhTsloBBJ5xQcGpOJFpP+xFk3EWBxzaG9/NKq9T3c+NgS3UxYQX/ZZkTip2c9WHiMMIPLz2oc7OPaNy8PX0tViyvvwyAgf+FKfr3EbYvmbRXzSJ+eDrtfemx0qAAAAA 1x"
+            type="image/webp"
+          />
+          <source
+            srcset="/project-team-3/assets/hero-client-02@2x-3a3322bf.png 2x"
+            type="image/png"
+          />
+          <img
+            class="reviews-img"
+            src="data:image/png;base64,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"
+            alt="client review"
+          />
+        </picture>
+      </li>
+
+      <li class="reviews-item">
+        <picture>
+          <source
+            srcset="data:image/webp;base64,UklGRkAFAABXRUJQVlA4WAoAAAAQAAAATwAATwAAQUxQSH0BAAABkFZtb91IHwRBEJRAMAQzmDCoGTQMXAaBYAiG8EEQBM3s9uLY2svPiJgAXC1pr410d7featkEC0u60weyJlljO83H1zSd3MwvZtaZ5GY+IW/zZPqkzHNo84lPneDLfGrLV8ndp79fo90X7HqB0pekDlP6otRBSl+WOkTpC1NHdF+6y2d3X/z+Ufbl9w/U1jN97/QA21vZQ8zvMAbKq5sHWV4oozB5lj3M8oxx2JPkgW6/1UhOAOKRmgApFE9AjeUAGAshHqxs0aQSzf6IprZoWo+GFo7/92U0Fk5v0bRHNHWPpqRoNolGwFgIHLFUIMWSALFQBMAZSQWALZL0GywO4mmJIz8Ti4L6DCWKgpfCGIg3cwz5HbQITryttp7pe9jXy/j0WO3Ax9LX6hioXIk6Asp1qBirXIWK0co1qBivfYWuuPSY7xBcnG0u23G9njM1xZSZszBj2sIZrAgm1syrrAhmT48L7NywpKQHR/BIgoVlK7V1+41sdU+CqwEAVlA4IJwDAACQEgCdASpQAFAAPoU4mEelI6KhL1VewKAQiUAYXgQ6NBGHxdu9zyTG0/eG9eW3ws0xjSaJR8uvS/clY14PDpa9Mu6BdJDHwKdQ4u8Awf4EiTzNvq7hCJPikBR/VigP0XRgD7Bq1uqLNnE6PmmfJQWSRLcMZdNStafg+0u/CIuN8+Fjkb8qKTEY5KbpTOdoq6WxojotPafMCNqOVGVAAP7+zLLf+Upn44T/kV3BzqP+U3G8S0Z3ZP0xOYBSlBNqdVCAd7UHot8ktPg4XdhcxN+A8ucgWbJtIrRpy2JoeaD11DQvOqU+B78NuC1V93NyDZybelWM9XcT2lFrWf56UFGka1NZwDmSDYjnSIH2kMVTmCprr25ZoZctQ7/sspjJV66UYfwqI+sJ7Q+9DuRP/GY1aS1Sulj9H3DM0/mQxRiyhsS8GwUEC7FlvCCZGNl+XhEjIW97HpkOXMXF0L1iVf5c1Dx+BXlPWxNCGzGLcoljJwZsEz3M/Hk1rQ+Fvw2e8HVuTRISXxQv2qxnffxugDvu6nAq1qQFtJLxMNSc6EcMz9mEc3im3Mjs5T/AZzucJCif8EidM/ZybI4imorha9iDwDMYXa+kwgVBinn2H4Xtu4srJvsE2n4jD4hHWLznKzJW0FlDimb7cdu2FtRzUYm6h7BCBsneQ3UcBkfEzFMWlwk7TTfy5+Tu7Ptpr3ghEHlZ8o1Vvj8Fmv1CgRCbRjLtjxyW7e4no3h6TVE0V/jxBrqXkS76MySTUEq1j96uLSnxyd9JoIYrRVPF8mX4yXfLHVzBDUZttXneVfNuDkOxoRNd8CkrC7NGU2nxTw65o1rtgvmphV+kWI8mjVOAnKRh6HskbAkfUNul/UUb/KhT1M/vw0rA6ywUr3PSNnZxQiEMQ/vqiIcJF9BJ1sRx07q3OWhnJSMChK7mt8C97CAGBkGhL4DbycB4W+XHn1QM+4JEvV42Sn1yHd4XNYzJcDNB5IJ01qvFzq9qDIxuIW0e1sxYCMXruR5cdjEj7BDzeZcP4iZ+cv6Kv70NXsAEcoD8Z+sFwR0zwLbLpbwXp1PTLvtDIf+hvg89O8Nkpylh11pQQWdQVJQYInosd+XDDjmvC8NgAAREBwmzpiwNQ8qXW1tgKt8e+YXgDtA+Bv6smnFuQf3AXHXA0vfxLOIGvz8R33uqbwjMweU7TpxTA11TACPxhBOJwr3RT1DCC/sAz/zQuAnNhJTXSYwAAAA= 2x, data:image/webp;base64,UklGRrACAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSMEAAAABgBDbdtzmQfgQBEVQzCBiEDGQGCgMFAaGIAgfwofw003LmwKIiAnAYkxdzd1GzxH75Wk+rS3skeIbW9jwMN+q11Lx7WVObj84ZGb40Xui+OHyx+XH0y9Bz5n8aE5YAASnFKBxZEA5DNFJY2ZJneU9WNRYzP9dYzFlGZ3lnVhyZIkwDgUyRwOEIwCoDA0AxM5p+IF07sLv9VTF3/eZgUkZJ26ZAeq+itVL91jCenjtqIKt4aVzlgX7Y+7D3E17ilgEAFZQOCDIAQAA0AgAnQEqKAAoAD6ROphIpaMiIS40DMiwEgliAKqP1H9tkAvn2iCmcePulT+ofRvZU/wu4MRzNZk+AwNzJfX4je9iwIkEJt1wvOcTUwrxYAD+8dAtWbe94b6Kf44nWn0L/GrT1WUzeXaxyJl1o5HX6mhh8i/aPAk6GqfU4neJbWi7+Wu06vebfVv77xjTHNSgvgRuIgKuv5FTHYsGOa1c7SJG6LMuCWIvFPoMkvC92H+GukPTg1jEySC+/iHf8+ki+WA6Jo+IBrbPVAXQHGhp62NbWdxIqvbshlC6Iq7Wv2c01/tX0NGaQeegHjBR5NSK+aCI8k9YuMVpSAb2Kj9tt/eKzGt3GtrwdHw/rkDyuYAn66O50sYspzzt8UL51JwI/LgHg9+HTR+Hf7N/aMoXOTnszYfUrEQvXtkSGQUPTAfIe0FlWQG9dFa2UifwiYtlqFc660CQF5yVDo5s22rZA9WgVGcjQqt7Eqz75H7rkGlp/BBFWGtFhDuNQlheQiTik3DYCD/voi+3l+0UUUpDz1+QqFj0LjlF01liDGJoIXQuG2Njq4veNHCQgvd6sWZ1QYooAGzCzzjp/0D7zM3Dzm50J2126jAA 1x"
+            type="image/webp"
+          />
+          <source
+            srcset="/project-team-3/assets/hero-client-01@2x-baafb875.png 2x"
+            type="image/png"
+          />
+          <img
+            class="reviews-img"
+            src="data:image/png;base64,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"
+            alt="client review"
+          />
+        </picture>
+      </li>
+      <li class="reviews-item">
+        <div class="review-item-wrapper">
+          <p class="review-text">
+            <span class="rewiev-text-number">2K</span>reviews
+          </p>
+        </div>
+      </li>
+    </ul>
+    <h1 class="hero-title">
+      organic <span class="hero-title-italic">vegetables </span>to you diet
+      today!
+    </h1>
+    <p class="hero-title-text">
+      Our expertly curated vegetable baskets are made with the freshest, highest
+      quality vegetables available. Fresh Harvest Box has got you covered.
+      Fresh, high-quality vegetables in expertly curated vegetable baskets
+      delivered to you.
+    </p>
+    <button
+      class="hero-order-btn button"
+      type="button"
+      data-modal-open
+      aria-label="make an order"
+    >
+      <span class="hero-order-btn-text">shop now</span>
+    </button>
+    <picture>
+      <source
+        srcset="/project-team-3/assets/desktop-hero-img@2x-a8eca28f.webp 2x, /project-team-3/assets/desktop-hero-img-7f84301c.webp 1x"
+        media="(min-width: 1280px)"
+        type="image/webp"
+        width="517"
+      />
+      <source
+        srcset="/project-team-3/assets/desktop-hero-img@2x-418e0afe.png 2x"
+        media="(min-width: 1280px)"
+        type="image/png"
+        width="517"
+      />
+      <source
+        srcset="/project-team-3/assets/tablet-hero-img@2x-ba68884a.webp 2x, /project-team-3/assets/tablet-hero-img-4d92f171.webp 1x"
+        media="(min-width: 768px)"
+        type="image/webp"
+        width="488"
+      />
+      <source
+        srcset="/project-team-3/assets/tablet-hero-img@2x-5565a4db.png 2x"
+        media="(min-width: 768px)"
+        type="image/png"
+        width="488"
+      />
+      <source
+        srcset="/project-team-3/assets/mobile-hero-img@2x-81bf9bad.webp 2x, /project-team-3/assets/mobile-hero-img-68328f7b.webp 1x"
+        media="(min-width: 320px)"
+        type="image/webp"
+        width="303"
+      />
+      <source
+        srcset="/project-team-3/assets/mobile-hero-img@2x-c826a0d6.png 2x"
+        media="(min-width: 320px)"
+        type="image/png"
+        width="303"
+      />
+      <img
+        class="hero-reviews-img"
+        src="/project-team-3/assets/mobile-hero-img-e2ad9223.png"
+        alt="client review"
+        width="303"
+      />
+    </picture>
+
+    <ul class="hero-tags js-tags list">
+      <li class="tags-item">
+        <button
+          class="tags-btn button active"
+          type="button"
+          aria-label="#organic"
+        >
+          #organic
+        </button>
+      </li>
+      <li class="tags-item">
+        <button
+          class="tags-btn button active"
+          type="button"
+          aria-label="#products"
+        >
+          #products
+        </button>
+      </li>
+      <li class="tags-item">
+        <button
+          class="tags-btn button active"
+          type="button"
+          aria-label="#basket"
+        >
+          #basket
+        </button>
+      </li>
+      <li class="tags-item">
+        <button
+          class="tags-btn button active"
+          type="button"
+          aria-label="#vegetables"
+        >
+          #vegetables
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="how-works" id="how-it-work">
+  <div class="container">
+    <div class="wrapper-flex">
+      <h2 class="how-works-title">
+        To order your vegetable basket, simply follow these easy steps
+      </h2>
+      <picture>
+        <source
+        type="image/webp"
+          media="(min-width:1280px)"
+          srcset="/project-team-3/assets/desk@2x-4c146d29.webp 2x, /project-team-3/assets/desk@1x-2925a20e.webp 1x"
+        />
+        <source
+        type="image/jpg"
+          media="(min-width:1280px)"
+          srcset="/project-team-3/assets/desk@2x-fdc16bfd.jpg 2x, /project-team-3/assets/desk@1x-5a3fdd6f.jpg 1x"
+        />
+        <source
+        type="image/webp"
+        media="(min-width:768px)"
+        srcset="/project-team-3/assets/tab@2x-a306b646.webp 2x, /project-team-3/assets/tab@1x-749a476d.webp 1x"
+      />
+      <source
+      type="image/jpg"
+        media="(min-width:768px)"
+        srcset="/project-team-3/assets/tab@2x-83c1336a.jpg 2x, /project-team-3/assets/tab@1x-89868f57.jpg 1x"
+      />
+      <source
+      type="image/webp"
+      media="(min-width:375px)"
+      srcset="/project-team-3/assets/mob@2x-f7f29f01.webp 2x, /project-team-3/assets/mob@1x-62f2f8e9.webp 1x"
+    />
+    <source
+    type="image/jpg"
+      media="(min-width:375px)"
+      srcset="/project-team-3/assets/mob@2x-6724447a.jpg 2x, /project-team-3/assets/mob@1x-1eb06953.jpg 1x"
+    />
+        <img
+          class="how-works-pic"
+          src="./img/how-its-work/webp/mob@2x.webp "
+          alt="image of broccoli"
+          width="335"
+          height="158"
+        />
+      </picture>
+    </div>
+    <div class="wrapper-text">
+      <p class="main-text-style one">
+        Our baskets are assembled with care and delivered straight to your
+        doorstep, so you can enjoy the taste of fresh fruit without ever leaving
+        your home.
+      </p>
+      <p class="main-text-style two">
+        Whether you're looking for a healthy snack or a thoughtful gift, our
+        fruit baskets are the perfect choice.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <section class="advertisment container">
+  <div class="bg bg-pointer advertisment-flex">
+    <div>
+      <h2 class="advertisment-title">
+        3 Easy Steps for Buying Fresh Vegetables
+      </h2>
+      <ol class="advertisment-list">
+        <li class="advertisment-items">
+          Just choose the vegetable you want to order by clicking on the
+          checkboxes next to it.
+        </li>
+        <li class="advertisment-items">
+          Click on the basket and fill out the form.
+        </li>
+        <li class="advertisment-items">
+          Sit back and relax! Your fresh vegetables basket will be delivered.
+        </li>
+      </ol>
+    </div>
+    <picture>
+      <source
+        type="image/webp"
+        media="(min-width: 1280px)"
+        srcset="/project-team-3/assets/girldesk@2x-bccc5f51.webp 2x, /project-team-3/assets/girldesk@1x-0071816e.webp 1x"
+      />
+      <source
+        type="image/png"
+        media="(min-width: 1280px)"
+        srcset="/project-team-3/assets/girldesk@2x-530d8b3a.png 2x, /project-team-3/assets/girldesk@1x-2df78cca.png 1x"
+      />
+      <source
+        type="image/webp"
+        media="(min-width: 768px)"
+        srcset="/project-team-3/assets/girltab@2x-ede520fc.webp 2x, /project-team-3/assets/girltab@1x-d6d97b74.webp 1x"
+      />
+      <source
+        type="image/png"
+        media="(min-width: 768px)"
+        srcset="/project-team-3/assets/girltab@2x-5b056dec.png 2x, /project-team-3/assets/girltab@1x-1ff3d414.png 1x"
+      />
+      <source
+        type="image/webp"
+        media="(min-width: 375px)"
+        srcset="/project-team-3/assets/girlmob@2x-ad85db7e.webp 2x, /project-team-3/assets/girlmob@1x-5bfbbdf7.webp 1x"
+      />
+      <source
+        type="image/png"
+        media="(min-width: 375px)"
+        srcset="/project-team-3/assets/girlmob@2x-f8b7b811.png 2x, /project-team-3/assets/girlmob@1x-66b44621.png 1x"
+      />
+      <img
+        class="advertisment-img"
+        src="/project-team-3/assets/girlmob@2x-ad85db7e.webp"
+        alt="girl with vegetables"
+        width="258"
+        height="319"
+      />
+    </picture>
+  </div>
+</section>
+<section class="marquee">
+  <h2 class="visually-hidden">Marquee</h2>
+  <div class="marquee-orange">
+    <div class="marquee__inner">
+      <p class="advertisment-strip">
+        Discount up to <span class="percent">40%!</span> Taste the vitamins and
+        keep your health
+      </p>
+      <p class="advertisment-strip">
+        Discount up to <span class="percent">40%!</span> Taste the vitamins and
+        keep your health
+      </p>
+    </div>
+  </div>
+  <div class="marquee-green">
+    <div class="marquee__inner">
+      <p class="advertisment-strip">
+        Discount up to 40%! Taste the <span class="vitamins">vitamins</span> and
+        keep your health
+      </p>
+      <p class="advertisment-strip">
+        Discount up to 40%! Taste the <span class="vitamins">vitamins</span> and
+        keep your health
+      </p>
+    </div>
+  </div>
+</section>
+
+    <section class="section-vegetables" id="vegetables">
+    <div class="container vegetables-container">
+        <h2 class="section-vegetables-title">ORGANIC VEGETABLES</h2>
+        <p class="section-vegetables-text">
+            Our organic vegetables are hand-picked from local farms and delivered straight to your doorstep, ensuring that you get the freshest and most nutritious produce possible.
+        </p>
+        <ul class="vegetables-list list">
+            <li class="vegetables-item">
+                <div class="vegetables-wrapper">
+                    <h3 class="vegetables-title">Carrot</h3>
+                    <p class="vegetables-text">Plant</p>
+                    <div class="vegetables-image-container">
+                        <picture>
+                            <source srcset="/project-team-3/assets/dcarrot@2x-b6dce5d2.webp 2x, /project-team-3/assets/dcarrot-5b591216.webp 1x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/dcarrot-05008620.png 1x, /project-team-3/assets/dcarrot@2x-b714da54.png 2x" media="(min-width: 1280px)" type="image/png">
+                            <source srcset="/project-team-3/assets/tcarrot@2x-c0a3e248.webp 2x, /project-team-3/assets/tcarrot-d37bb031.webp 1x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/tcarrot-4792d36d.png 1x, /project-team-3/assets/tcarrot@2x-91192a3b.png 2x" media="(min-width: 768px)" type="image/png">
+                            <source srcset="/project-team-3/assets/carrot@2x-56d7fc03.webp 2x, /project-team-3/assets/carrot-ed50a901.webp 1x" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/carrot-b26f16fc.png 1x, /project-team-3/assets/carrot@2x-02af58b4.png 2x" media="(max-width: 767px)" type="image/png">
+                            <img src="/project-team-3/assets/carrot-b26f16fc.png" alt="carrot">
+                        </picture>
+                        <!-- <svg class="vegetables-svg" width="195" height="38">
+                            <use href="./img/icons.svg#icon-oval"></use>
+                        </svg> -->
+                        <!-- <img src="./img/vegetables/ovalpng.png" alt="oval" width="195" height="38"> -->
+                    </div>
+                    <p class="vegetables-cost">100 UAH / kg</p>
+                </div>
+            </li>
+            <li class="vegetables-item">
+                <div class="vegetables-wrapper">
+                    <h3 class="vegetables-title">Brussel sprouts</h3>
+                    <p class="vegetables-text">Plant</p>
+                    <div class="vegetables-image-container">
+                        <picture>
+                            <source srcset="/project-team-3/assets/dbrussel@2x-7e6558c5.webp 2x, /project-team-3/assets/dbrussel-63209aad.webp 1x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/dbrussel-762d05d8.png 1x, /project-team-3/assets/dbrussel@2x-cce8db55.png 2x" media="(min-width: 1280px)" type="image/png">
+                            <source srcset="/project-team-3/assets/tbrussel@2x-cf722c1a.webp 2x, /project-team-3/assets/tbrussel-7413cd47.webp 1x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/tbrussel-d3f65702.png 1x, /project-team-3/assets/tbrussel@2x-42557f1b.png 2x" media="(min-width: 768px)" type="image/png">
+                            <source srcset="/project-team-3/assets/brussel@2x-ab5076a3.webp 2x, /project-team-3/assets/brussel-8642b589.webp 1x" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/brussel-62a5e873.png 1x, /project-team-3/assets/brussel@2x-38bee248.png 2x" media="(max-width: 767px)" type="image/png">
+                            <img src="/project-team-3/assets/brussel-62a5e873.png" alt="brussel">
+                        </picture>
+                        <!-- <svg class="vegetables-svg" width="195" height="38">
+                            <use href="./img/icons.svg#icon-oval"></use>
+                        </svg> -->
+                        <!-- <img src="./img/vegetables/ovalpng.png" alt="oval" width="195" height="38"> -->
+                    </div>
+                    <p class="vegetables-cost">80 UAH / kg</p>
+                </div>
+            </li>
+            <li class="vegetables-item">
+                <div class="vegetables-wrapper">
+                    <h3 class="vegetables-title">Tomato</h3>
+                    <p class="vegetables-text">Plant</p>
+                    <div class="vegetables-image-container">
+                        <picture>
+                            <source srcset="/project-team-3/assets/dtomato@2x-ae42a760.webp 2x, /project-team-3/assets/dtomato-87245574.webp 1x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/dtomato-1e791dcd.png 1x, /project-team-3/assets/dtomato@2x-008d983e.png 2x" media="(min-width: 1280px)" type="image/png">
+                            <source srcset="/project-team-3/assets/ttomato@2x-eb07b310.webp 2x, /project-team-3/assets/ttomato-890445f4.webp 1x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/ttomato-8619e4c1.png 1x, /project-team-3/assets/ttomato@2x-9f1c23ad.png 2x" media="(min-width: 768px)" type="image/png">
+                            <source srcset="/project-team-3/assets/tomato@2x-11cdadac.webp 2x, /project-team-3/assets/tomato-3d1aabf9.webp 1x" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/tomato-bcc10cad.png 1x, /project-team-3/assets/tomato@2x-70ee7fd2.png 2x" media="(max-width: 767px)" type="image/png">
+                            <img src="/project-team-3/assets/tomato-bcc10cad.png" alt="tomato">
+                        </picture>
+                        <!-- <svg class="vegetables-svg" width="195" height="38">
+                            <use href="./img/icons.svg#icon-oval"></use>
+                        </svg> -->
+                        <!-- <img src="./img/vegetables/ovalpng.png" alt="oval" width="195" height="38"> -->
+                    </div>
+                    <p class="vegetables-cost">40 UAH / kg</p>
+                </div>
+            </li>
+            <li class="vegetables-item">
+                <div class="vegetables-wrapper">
+                    <h3 class="vegetables-title">Eggplant</h3>
+                    <p class="vegetables-text">Plant</p>
+                    <div class="vegetables-image-container">
+                        <picture>
+                            <source srcset="/project-team-3/assets/deggplant@2x-dbe39513.webp 2x, /project-team-3/assets/deggplant-1a4f2c79.webp 1x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/deggplant-0cf809fd.png 1x, /project-team-3/assets/deggplant@2x-639afef0.png 2x" media="(min-width: 1280px)" type="image/png">
+                            <source srcset="/project-team-3/assets/deggplant@2x-dbe39513.webp 2x, /project-team-3/assets/deggplant-1a4f2c79.webp 1x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/deggplant-0cf809fd.png 1x, /project-team-3/assets/deggplant@2x-639afef0.png 2x" media="(min-width: 768px)" type="image/png">
+                            <source srcset="/project-team-3/assets/eggplant@2x-a3cb5c32.webp 2x, /project-team-3/assets/eggplant-c5ab0647.webp 1x" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/eggplant-48131bac.png 1x, /project-team-3/assets/eggplant@2x-22388516.png 2x" media="(max-width: 767px)" type="image/png">
+                            <img src="/project-team-3/assets/eggplant-48131bac.png" alt="eggplant">
+                        </picture>
+                        <!-- <svg class="vegetables-svg" width="195" height="38">
+                            <use href="./img/icons.svg#icon-oval"></use>
+                        </svg> -->
+                        <!-- <img src="./img/vegetables/ovalpng.png" alt="oval" width="195" height="38"> -->
+                    </div>
+                    <p class="vegetables-cost">60 UAH / kg</p>
+                </div>
+            </li>
+            <li class="vegetables-item">
+                <div class="vegetables-wrapper">
+                    <h3 class="vegetables-title">Sweet potatoes</h3>
+                    <p class="vegetables-text">Plant</p>
+                    <div class="vegetables-image-container">
+                        <picture>
+                            <source srcset="/project-team-3/assets/dpotato@2x-155c4bbe.webp 2x, /project-team-3/assets/dpotato-c47c511e.webp 1x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/dpotato-9259324a.png 1x, /project-team-3/assets/dpotato@2x-ed00e821.png 2x" media="(min-width: 1280px)" type="image/png">
+                            <source srcset="/project-team-3/assets/tpotato@2x-b8fa99b7.webp 2x, /project-team-3/assets/tpotato-45f1dbb2.webp 1x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/tpotato-e1557905.png 1x, /project-team-3/assets/tpotato@2x-54f5e725.png 2x" media="(min-width: 768px)" type="image/png">
+                            <source srcset="/project-team-3/assets/potato@2x-96376a8a.webp 2x, /project-team-3/assets/potato-14433668.webp 1x" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/potato-54c6c743.png 1x, /project-team-3/assets/potato@2x-008b7342.png 2x" media="(max-width: 767px)" type="image/png">
+                            <img src="/project-team-3/assets/potato-54c6c743.png" alt="potato">
+                        </picture>
+                        <!-- <svg class="vegetables-svg" width="195" height="38">
+                            <use href="./img/icons.svg#icon-oval"></use>
+                        </svg> -->
+                        <!-- <img src="./img/vegetables/ovalpng.png" alt="oval" width="195" height="38"> -->
+                    </div>
+                    <p class="vegetables-cost">80 UAH / kg</p>
+                </div>
+            </li>
+            <li class="vegetables-item">
+                <div class="vegetables-wrapper">
+                    <h3 class="vegetables-title">Leek</h3>
+                    <p class="vegetables-text">Plant</p>
+                    <div class="vegetables-image-container">
+                        <picture>
+                            <source srcset="/project-team-3/assets/donion@2x-a91aaf13.webp 2x, /project-team-3/assets/donion-03a3e872.webp 1x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/donion-4a174c91.png 1x, /project-team-3/assets/donion@2x-c980f001.png 2x" media="(min-width: 1280px)" type="image/png">
+                            <source srcset="/project-team-3/assets/tonion@2x-2caa5a3e.webp 2x, /project-team-3/assets/tonion-e3c061d1.webp 1x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/tonion-385069a6.png 1x, /project-team-3/assets/tonion@2x-c36a2f58.png 2x" media="(min-width: 768px)" type="image/png">
+                            <source srcset="/project-team-3/assets/onion@2x-85d4c082.webp 2x, /project-team-3/assets/onion-8c87a5bf.webp 1x" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/onion-4573d79b.png 1x, /project-team-3/assets/onion@2x-f6608090.png 2x" media="(max-width: 767px)" type="image/png">
+                            <img src="/project-team-3/assets/onion-4573d79b.png" alt="leek">
+                        </picture>
+                        <!-- <svg class="vegetables-svg" width="195" height="38">
+                            <use href="./img/icons.svg#icon-oval"></use>
+                        </svg> -->
+                        <!-- <img src="./img/vegetables/ovalpng.png" alt="oval" width="195" height="38"> -->
+                    </div>
+                    <p class="vegetables-cost">50 UAH / kg</p>
+                </div>
+            </li>
+            <li class="vegetables-item">
+                <div class="vegetables-wrapper">
+                    <h3 class="vegetables-title">Mushrooms</h3>
+                    <p class="vegetables-text">Plant</p>
+                    <div class="vegetables-image-container">
+                        <picture>
+                            <source srcset="/project-team-3/assets/dmushrooms@2x-28cedc90.webp 2x, /project-team-3/assets/dmushrooms-62aa2b53.webp 1x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/dmushrooms-566958a5.png 1x, /project-team-3/assets/dmushrooms@2x-b5fc2594.png 2x" media="(min-width: 1280px)" type="image/png">
+                            <source srcset="/project-team-3/assets/tmushrooms@2x-5263d1b1.webp 2x, /project-team-3/assets/tmushrooms-65a6b65a.webp 1x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/tmushrooms-63c523f9.png 1x, /project-team-3/assets/tmushrooms@2x-3885ed94.png 2x" media="(min-width: 768px)" type="image/png">
+                            <source srcset="/project-team-3/assets/mushrooms@2x-a3568125.webp 2x, /project-team-3/assets/mushrooms-e7d860e5.webp 1x" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/mushrooms-e40e63ef.png 1x, /project-team-3/assets/mushrooms@2x-3253548d.png 2x" media="(max-width: 767px)" type="image/png">
+                            <img src="/project-team-3/assets/mushrooms-e40e63ef.png" alt="mushrooms">
+                        </picture>
+                        <!-- <svg class="vegetables-svg" width="195" height="38">
+                            <use href="./img/icons.svg#icon-oval"></use>
+                        </svg> -->
+                        <!-- <img src="./img/vegetables/ovalpng.png" alt="oval" width="195" height="38"> -->
+                    </div>
+                    <p class="vegetables-cost">40 UAH / kg</p>
+                </div>
+            </li>
+            <li class="vegetables-item">
+                <div class="vegetables-wrapper">
+                    <h3 class="vegetables-title">Corn</h3>
+                    <p class="vegetables-text">Plant</p>
+                    <div class="vegetables-image-container">
+                        <picture>
+                            <source srcset="/project-team-3/assets/dcorn@2x-85cd47d2.webp 2x, /project-team-3/assets/dcorn-f2098f52.webp 1x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/dcorn-c9b78ea3.png 1x, /project-team-3/assets/dcorn@2x-4da06651.png 2x" media="(min-width: 1280px)" type="image/png">
+                            <source srcset="/project-team-3/assets/tcorn@2x-65ef2a3c.webp 2x, /project-team-3/assets/tcorn-83df8edb.webp 1x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/tcorn-7d533a07.png 1x, /project-team-3/assets/tcorn@2x-6b38781a.png 2x" media="(min-width: 768px)" type="image/png">
+                            <source srcset="/project-team-3/assets/corn@2x-cc4c6e46.webp 2x, /project-team-3/assets/corn-d7037b0d.webp 1x" media="(max-width: 767px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/corn-dbc8ab42.png 1x, /project-team-3/assets/corn@2x-3a913ba2.png 2x" media="(max-width: 767px)" type="image/png">
+                            <img src="/project-team-3/assets/corn-dbc8ab42.png" alt="corn">
+                        </picture>
+                        <!-- <svg class="vegetables-svg" width="195" height="38">
+                            <use href="./img/icons.svg#icon-oval"></use>
+                        </svg> -->
+                        <!-- <img src="./img/vegetables/ovalpng.png" alt="oval" width="195" height="38"> -->
+                    </div>
+                    <p class="vegetables-cost">60 UAH / kg</p>
+                </div>
+            </li>
+            <li class="vegetables-item hide">
+                <div class="vegetables-wrapper">
+                    <h3 class="vegetables-title">Radish</h3>
+                    <p class="vegetables-text">Plant</p>
+                    <div class="vegetables-image-container">
+                        <picture>
+                            <source srcset="/project-team-3/assets/dradish@2x-25706fe5.webp 2x, /project-team-3/assets/dradish-001d24f6.webp 1x" media="(min-width: 1280px)" type="image/webp">
+                            <source srcset="/project-team-3/assets/dradish-a5d88bc3.png 1x, /project-team-3/assets/dradish@2x-7a88a5a7.png 2x" media="(min-width: 1280px)" type="image/png">
+                            <img src="/project-team-3/assets/dradish-a5d88bc3.png" alt="radish">
+                        </picture>
+                    </div>
+                    <p class="vegetables-cost">90 UAH / kg</p>
+                </div>
+            </li>
+        </ul>
+        <button class="vegetables-button" type="button" aria-label="open-modal" data-modal-open>
+            <span class="vegetables-button-rotate">
+                <svg width="14" height="14">
+                    <use href="/project-team-3/assets/icons-e4210cf5.svg#icon-vector"></use>
+                </svg>
+                <span class="button-text">Order</span>
+            </span>
+        </button>
+    </div>
+</section>
+    <!-- ~~~~~ Delivery ~~~~~ -->
+<section class="section delivery-section">
+    <div class="container delivery-container">
+      <h2 class="visually-hidden">Delivery</h2>
+      <picture>
+        <!-- Desctop screen >= 1280px -->
+        <source
+          media="(min-width: 1280px)"
+          srcset="/project-team-3/assets/desk_delivery@1x-157b2254.webp 1x, /project-team-3/assets/desk_delivery@2x-21a13c17.webp 2x"
+        type="image/webp"
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="/project-team-3/assets/desk_delivery@1x-ae42d8ad.png 1x, /project-team-3/assets/desk_delivery@2x-71a93b11.png 2x"
+          type="image/png"
+        />
+        <!-- Tablet screen >= 768 -->
+        <source
+          media="(min-width: 768px)"
+          srcset="/project-team-3/assets/tab_delivery@1x-969d575a.webp 1x, /project-team-3/assets/tab_delivery@2x-f335ece5.webp 2x"
+        type="image/webp"
+        />
+
+        <source
+          media="(min-width: 768px)"
+        
+          srcset="/project-team-3/assets/tab_delivery@1x-ca45742b.png 1x, /project-team-3/assets/tab_delivery@2x-5b0801dc.png 2x"
+        type="image/png"
+          
+        />
+        <!-- Mobile screen <= 767 -->
+        <source
+          media="(max-width: 767px)"
+          srcset="/project-team-3/assets/mob_delivery@1x-327bcb1c.webp 1x, /project-team-3/assets/mob_delivery@2x-11f62ff8.webp 2x"
+        type="image/webp"
+          
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="/project-team-3/assets/mob_delivery@1x-b39efc3c.png 1x, /project-team-3/assets/mob_delivery@2x-34b82e68.png 2x"
+        type="image/png"
+        />
+        <img
+          class="delivery-img"
+          src="/project-team-3/assets/mob_delivery@1x-b39efc3c.png"
+          alt="illustration: Next to the green moped, the courier hands the
+        order to the buyer"
+         
+          loading="lazy"
+        />
+      </picture>
+      <div class="delivery-container-txt">
+        <p class="delivery-txt">
+            The best shipping for you!
+            <span class="green-txt">Your products</span>&nbsp; always arrive in the 
+            <span class="orange-txt"> best</span>&nbsp; conditions!
+          </p>
+    </div>
+    </div>
+  </section>
+  <!--````` delivery end `````-->
+    <!-- ================= SECTION WE-WILL-CAL-YOU ================== -->
+<section class="we-will-cal-you">
+  <div class="container div-desktop">
+    <div class="div-we-will-cal-you">
+      <h2 class="section-heading">Fresh Harvest Box has got you covered</h2>
+      <p class="description">
+        Our boxes are packed with delicious, nutritious vegetables, perfect for
+        anyone looking to eat healthier or support local farmers. Order your box
+        today and start enjoying the best that nature has to offer!
+      </p>
+      <form class="form-call-you">
+        <label>
+          <input
+            class="input-call-you"
+            name="user_phone"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            type="tel"
+            placeholder="+380 ()"
+            title="0XX-888-88-88"
+          />
+        </label>
+
+        <button class="button-input-call-you" type="submit">Recall</button>
+      </form>
+    </div>
+
+    <div class="div-call-you">
+      <picture>
+        <source
+          srcset="/project-team-3/assets/girl-we-will-call-you-desk@2x-222f012f.webp 2x, /project-team-3/assets/girl-we-will-call-you-desk-d149bb08.webp 1x"
+          media="(min-width: 1280px)"
+          type="image/webp"
+        />
+        <source
+          srcset="/project-team-3/assets/girl-we-will-call-you-desk-16aca581.png 1x, /project-team-3/assets/girl-we-will-call-you-desk@2x-d19afd31.png 2x"
+          media="(min-width: 1280px)"
+          type="image/png"
+        />
+        <source
+          srcset="/project-team-3/assets/girl-we-will-call-you-tab@2x-00c2614d.webp 2x, /project-team-3/assets/girl-we-will-call-you-tab-a2782794.webp 1x"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+
+        <source
+          srcset="/project-team-3/assets/girl-we-will-call-you-tab-a751e04b.png 1x, /project-team-3/assets/girl-we-will-call-you-tab@2x-ea659ca1.png 2x"
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <source
+          srcset="/project-team-3/assets/girl-we-will-call-you@2x-e03cd32d.webp 2x, /project-team-3/assets/girl-we-will-call-you-a4078b94.webp 1x"
+          media="(max-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="/project-team-3/assets/girl-we-will-call-you-aaf380fb.png 1x, /project-team-3/assets/girl-we-will-call-you@2x-7b5a60e2.png 2x"
+          media="(max-width: 768px)"
+          type="image/png"
+        />
+        <img
+          class="img-we-will-cal-you"
+          src="/project-team-3/assets/girl-we-will-call-you-aaf380fb.png"
+          alt="girl-we-will-call-you"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer-section">
+  <div class="section">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="wrapper-logo-and-navigation">
+          <div class="logo-and-photo">
+            <div class="photo-footer">
+              <picture>
+                <!-- Зображення для телефону  -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="/project-team-3/assets/vegetablesPhone@1x-387bc2e6.webp 1x, /project-team-3/assets/vegetablesPhone@2x-d35acd60.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="/project-team-3/assets/vegetablesPhone@1x-c488ec58.png 1x, /project-team-3/assets/vegetablesPhone@2x-9576135a.png 2x"
+                  type="image/png"
+                />
+
+                <!-- Зображення для планшета та десктопу -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/project-team-3/assets/vegetables@1x-e4858250.webp 1x, /project-team-3/assets/vegetables@2x-df399ce2.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/footer/phone/vegetables@1x.png 1x,
+                    ./img/footer/phone/vegetables@2x.png 2x
+                  "
+                  type="image/png"
+                />
+
+                <!-- Зображення за замовчуванням (якщо ніякий з source не підходить) -->
+                <img
+                  src="/project-team-3/assets/vegetablesPhone@1x-387bc2e6.webp"
+                  alt="Броколі"
+                />
+              </picture>
+            </div>
+            <div class="logo-wrapper-footer">
+              <a href="./index.html" class="logo-link-footer">
+                <svg class="logo-footer-svg" width="16" height="16">
+                  <use href="/project-team-3/assets/icons-e4210cf5.svg#icon-logo"></use>
+                </svg>
+                <p class="logo-footer">veggieboost</p>
+              </a>
+            </div>
+          </div>
+          <ul class="navigation-list-footer list">
+            <li class="navigation-list-item-footer">
+              <a class="navigation-footer-link" href="#how-it-work"
+                >How It Works</a
+              >
+            </li>
+            <li class="navigation-list-item-footer">
+              <a class="navigation-footer-link" href="#vegetables"
+                >Vegetables</a
+              >
+            </li>
+            <li class="navigation-list-item-footer">
+              <a class="navigation-footer-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="wrapper-icons-and-adress-footer" id="contacts">
+          <ul class="social-list list">
+            <li class="social-item-footer">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="social-link-footer"
+              >
+                <svg class="social-icon" height="24" width="24">
+                  <use href="/project-team-3/assets/icons-e4210cf5.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item-footer">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="social-link-footer"
+              >
+                <svg class="social-icon" height="24" width="24">
+                  <use href="/project-team-3/assets/icons-e4210cf5.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item-footer">
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="social-link-footer"
+              >
+                <svg class="social-icon" height="24" width="24">
+                  <use href="/project-team-3/assets/icons-e4210cf5.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a href="tel:+380684439426" class="phone-wrapper"
+            >+380 (68) 443-94-26</a
+          >
+          <address class="adress-wrapper">
+            <a
+              class="adress_link link"
+              target="_blank"
+              href="https://www.google.com/maps/place/1678+Pioneer+Rd,+Salt+Lake+City,+UT+84104,+%D0%A1%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D1%96+%D0%A8%D1%82%D0%B0%D1%82%D0%B8+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8/@40.7335892,-111.9600867,17z/data=!3m1!4b1!4m6!3m5!1s0x8752f35b0826d399:0x2b26230524fd3ca3!8m2!3d40.7335892!4d-111.9600867!16s%2Fg%2F11bw41vm_p?entry=ttu"
+              >1678 S. Pioneer Road Salt Lake City <br />
+              UT 84104</a
+            >
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <div data-modal class="backdrop is-hidden">
+  <div class="modal">
+    <h2 class="title-modal">your order</h2>
+    <button data-modal-close class="modal-close-btn">
+      <svg class="modal-close-icon" height="24" width="24">
+        <use href="/project-team-3/assets/icons-e4210cf5.svg#icon-close-button"></use>
+      </svg>
+    </button>
+    <form class="form-general">
+      <div class="wrapper-checkbox">
+        <input
+          type="checkbox"
+          id="cabbage-basket"
+          name="cabbage_basket"
+          value="done"
+          class="cabbage_basket visually-hidden"
+        />
+        <div class="wrapper-checkbox-card cabbage">
+          <label for="cabbage-basket"
+            ><span class="icon-illusion">
+              <svg class="icon-ckeckbox" width="6" height="6">
+                <use href="/project-team-3/assets/icons-e4210cf5.svg#icon-pick"></use>
+              </svg>
+            </span>
+          </label>
+          <picture class="picture-checkbox-card">
+            <!-- Зображення для телефону (до 768px шириною) -->
+            <source
+              media="(max-width: 767px)"
+              srcset="data:image/webp;base64,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 1x, /project-team-3/assets/cabbage@2x-d0b57a45.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/project-team-3/assets/cabbage-18222dec.png 1x, /project-team-3/assets/cabbage@2x-4d2f1b22.png 2x"
+              type="image/png"
+            />
+            <!-- Зображення для планшета -->
+            <source
+              media="(min-width: 768px) and (max-width: 1279px) "
+              srcset="/project-team-3/assets/cabbageTablet-5938254b.webp 1x, /project-team-3/assets/cabbageTablet@2x-c4187784.webp 2x"
+              type="image/webp"
+            />
+
+            <source
+              media="(min-width: 768px) and (max-width: 1279px) "
+              srcset="/project-team-3/assets/cabbageTablet-77bb2d5e.png 1x, /project-team-3/assets/cabbageTablet@2x-f80cedeb.png 2x"
+              type="image/png"
+            />
+
+            <!-- Зображення для ноутбука -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="/project-team-3/assets/cabbageDesc-09eca51b.webp 1x, /project-team-3/assets/cabbageDesc@2x-077df20f.webp 2x, /project-team-3/assets/cabbageDesc-e2d8256a.png 1x, /project-team-3/assets/cabbageDesc@2x-c2ceb361.png 2x"
+              type="image/webp"
+            />
+
+            <source
+              media="(min-width: 1280px)"
+              srcset="/project-team-3/assets/cabbageDesc-e2d8256a.png 1x, /project-team-3/assets/cabbageDesc@2x-c2ceb361.png 2x"
+              type="image/png"
+            />
+            <!-- Зображення за замовчуванням (якщо ніякий з source не підходить) -->
+            <img src="photo-default.jpg" alt="Фотографія" />
+          </picture>
+          <h2 class="title-checkbox-card">Cabbage Basket</h2>
+          <p class="subtitle-checkbox-card">Plant</p>
+        </div>
+
+        <input
+          type="checkbox"
+          id="tomato-basket"
+          name="tomato_basket"
+          value="done"
+          class="tomato_basket visually-hidden"
+        />
+        <div class="wrapper-checkbox-card tomato">
+          <label for="tomato-basket"
+            ><span class="icon-illusion">
+              <svg class="icon-ckeckbox" width="6" height="6">
+                <use href="/project-team-3/assets/icons-e4210cf5.svg#icon-pick"></use>
+              </svg>
+            </span>
+          </label>
+
+          <picture class="picture-checkbox-card">
+            <!-- Зображення для телефону (до 768px шириною) -->
+            <source
+              media="(max-width: 767px)"
+              srcset="data:image/webp;base64,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 1x, /project-team-3/assets/tomato@2x-0f62ab9e.webp 2x"
+              type="image/webp"
+            />
+
+            <source
+              media="(max-width: 767px)"
+              srcset="/project-team-3/assets/tomato-db72ed23.png 1x, /project-team-3/assets/tomato@2x-e7766e7c.png 2x"
+              type="image/png"
+            />
+
+            <!-- Зображення для планшета -->
+            <source
+              media="(min-width: 768px) and (max-width:1279px) "
+              srcset="/project-team-3/assets/tomatoTablet-979cfb5f.webp 1x, /project-team-3/assets/tomatoTablet@2x-69b781ea.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px) and (max-width:1279px) "
+              srcset="/project-team-3/assets/tomatoTablet-608ebd9e.png 1x, /project-team-3/assets/tomatoTablet@2x-5e6db89f.png 2x"
+              type="image/png"
+            />
+
+            <!-- Зображення для ноутбука -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="/project-team-3/assets/tomatoDesc-db18b4b7.webp 1x, /project-team-3/assets/tomatoDesc@2x-3d2bb48d.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="/project-team-3/assets/tomatoDesc-862d8626.png 1x, /project-team-3/assets/tomatoDesc@2x-46d52a6f.png 2x"
+              type="image/png"
+            />
+
+            <!-- Зображення за замовчуванням (якщо ніякий з source не підходить) -->
+            <img src="photo-default.jpg" alt="Фотографія" />
+          </picture>
+          <h2 class="title-checkbox-card">Tomato Basket</h2>
+          <p class="subtitle-checkbox-card">Plant</p>
+        </div>
+
+        <input
+          type="checkbox"
+          id="vegetables-basket"
+          name="vegetables_basket"
+          value="done"
+          class="vegetables_basket visually-hidden"
+        />
+        <div class="wrapper-checkbox-card vegetables">
+          <label for="vegetables-basket"
+            ><span class="icon-illusion">
+              <svg class="icon-ckeckbox" width="6" height="6">
+                <use href="/project-team-3/assets/icons-e4210cf5.svg#icon-pick"></use>
+              </svg>
+            </span>
+          </label>
+          <picture class="picture-checkbox-card">
+            <!-- Зображення для телефону (до 768px шириною) -->
+            <source
+              media="(max-width: 767px)"
+              srcset="data:image/webp;base64,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 1x, /project-team-3/assets/vegetables-basket@2x-45e1c8d3.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/project-team-3/assets/vegetables-basket-43c8864e.png 1x, /project-team-3/assets/vegetables-basket@2x-1e72938d.png 2x"
+              type="image/png"
+            />
+
+            <!-- Зображення для планшета -->
+            <source
+              media="(min-width: 768px) and (max-width:1279px)"
+              srcset="/project-team-3/assets/vegetables-baskeTablet-4be8dbcd.webp 1x, /project-team-3/assets/vegetables-basketTablet@2x-650ebf6a.webp 2x"
+              type="image/webp"
+            />
+
+            <source
+              media="(min-width: 768px) and (max-width:1279px)"
+              srcset="/project-team-3/assets/vegetables-baskeTablet-4be8dbcd.webp 1x, /project-team-3/assets/vegetables-basketTablet@2x-650ebf6a.webp 2x"
+              type="image/png"
+            />
+            <!-- Зображення для ноутбука -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="/project-team-3/assets/vegetablesDesc-c6170d84.webp 1x, /project-team-3/assets/vegetablesDesc@2x-0f006291.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="/project-team-3/assets/vegetablesDesc-db2b2117.png 1x, /project-team-3/assets/vegetablesDesc@2x-36dba82d.png 2x"
+              type="image/png"
+            />
+
+            <!-- Зображення за замовчуванням (якщо ніякий з source не підходить) -->
+            <img src="photo-default.jpg" alt="Фотографія" />
+          </picture>
+          <h2 class="title-checkbox-card">Vegetables Basket</h2>
+          <p class="subtitle-checkbox-card">Plant</p>
+        </div>
+      </div>
+      <div class="wrapper-input-text">
+        <input
+          name="user-name"
+          type="text"
+          id="user_name"
+          required
+          pattern="^{a-zA-Z а-яА-я іІЇї}+$"
+          minlength="2"
+          placeholder="Enter full name..."
+          class="input-common input-name"
+        />
+        <input
+          name="user-email"
+          type="email"
+          id="user_email"
+          required
+          minlength="2"
+          placeholder="Enter email..."
+          class="input-common input-name"
+        />
+        <input
+          name="user-card"
+          type="text"
+          id="user_card"
+          required
+          minlength="2"
+          pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+          title="xxxx-xxxx-xxxx-xxxx"
+          placeholder="Enter card..."
+          class="input-common input-name"
+        />
+        <textarea
+          name="comment-user"
+          id="comment-user"
+          class="textarea-form"
+          placeholder="Enter comments"
+        ></textarea>
+      </div>
+      <button type="submit" class="send-form-btn">Submit</button>
+    </form>
+  </div>
+</div>
+
+    <div class="mobile-menu js-menu-container">
+  <div class="mobile-menu-header container">
+    <a></a>
+    <button
+      class="mobile-close-button js-close-menu"
+      type="button"
+      aria-label="mobile menu close"
+    >
+      <svg
+        class="mobile-close-button-icon"
+        width="24"
+        height="24"
+        aria-label="mobile menu close icon"
+      >
+        <use href="/project-team-3/assets/icons-e4210cf5.svg#icon-close-button"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-menu-navi">
+    <nav>
+      <ul class="list js-nav-ref">
+        <li class="mobile-munu-item">
+          <a class="mobile-menu-link" href="#how-it-work">How It Works</a>
+        </li>
+        <li class="mobile-munu-item">
+          <a class="mobile-menu-link" href="#vegetables">Vegetables</a>
+        </li>
+        <li class="mobile-munu-item">
+          <a class="mobile-menu-link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <button
+      type="button"
+      class="button mobile-menu-oder-button js-nav-ref"
+      data-modal-open
+      aria-label="open order on mobile"
+    >
+      <svg
+        class="mobile-menu-oder-button-icon"
+        width="20"
+        height="20"
+        aria-label="mobile menu order icon"
+      >
+        <use href="/project-team-3/assets/icons-e4210cf5.svg#icon-shopping-cart"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>
